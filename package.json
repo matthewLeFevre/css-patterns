@@ -1,0 +1,31 @@
+{
+  "name": "css-patterns",
+  "version": "1.0.0",
+  "description": "Mature CSS pattern library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewLeFevre/css-patterns.git"
+  },
+  "keywords": [
+    "CSS",
+    "JS",
+    "HTML"
+  ],
+  "author": "Matthew LeFevre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewLeFevre/css-patterns/issues"
+  },
+  "homepage": "https://github.com/matthewLeFevre/css-patterns#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
