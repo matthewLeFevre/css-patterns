@@ -2,7 +2,7 @@ let gulp = require('gulp');
 let sass = require('gulp-sass');
 let sourcemaps = require('gulp-sourcemaps');
 let autoprefixer = require('gulp-autoprefixer');
-let browserSync = require('browsersync').create();
+let browserSync = require('browser-sync').create();
 
 gulp.task('css', function(){
     return gulp.src('src/sass/**/**.scss')
@@ -14,7 +14,7 @@ gulp.task('css', function(){
         .pipe( browserSync.stream())
 });
 
-gulp.task('broswerSync', function(){
+gulp.task('browserSync', function(){
     browserSync.init({
         server: {
             baseDir: './'
@@ -24,4 +24,4 @@ gulp.task('broswerSync', function(){
 
 gulp.task('watch', ['css', 'browserSync'], function() {
     gulp.watch('src/sass/**/**.scss', ['css']);
-});git 
+});

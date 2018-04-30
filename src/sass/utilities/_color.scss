@@ -1,0 +1,19 @@
+@each $color, $value in $colors {
+	.bg-#{$color} {
+		@include background($value);
+	}
+	.txt-#{$color} {
+		color: $value;
+	}
+}
+
+@each $alert, $value in $alerts {
+	.#{$alert} {
+		@include background($value);
+		color: $white;
+	}
+	
+	.txt-#{$alert} {
+		color: $value;
+	}
+}

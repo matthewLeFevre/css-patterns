@@ -1,0 +1,147 @@
+// Variables
+
+// 1. Colors
+// 2. Typography
+
+// Colors
+
+$white:    		#fff;
+$grey-100: 		#C3C7C9;
+$grey-200: 		#91999D;
+$grey-300: 		#697479;
+$grey-400: 		#5A676C;
+$grey-500: 		#4A585E;
+$black:    		#000;
+
+$greys: (
+	"100": 			$grey-100,
+	"200": 			$grey-200,
+	"300": 			$grey-300,
+	"400": 			$grey-400,
+	"500": 			$grey-500
+);
+
+$grey: 				$grey-300;
+$blue: 				#084887;
+$green: 			#56BF00;
+$yellow: 			#FFCC42;
+$red: 				#D33115;
+$ruby:				#822828;
+$queen:				#466995;
+$spring:			#2E7145;
+$purple:			#5F0F40;
+
+$alerts: (
+	"neutral":  $blue,
+	"success": 	$green,
+	"warning": 	$yellow,
+	"error":	$red,
+);
+
+$colors: (
+	"grey": 	$grey,
+	"blue": 	$blue,
+	"green": 	$green,
+	"yellow":	$yellow,
+	"red":		$red,
+	"ruby":		$ruby,
+	"queen":	$queen,
+	"spring":   $spring,
+	"purple":   $purple,
+);
+
+// Typography
+
+$main-font:   		sans-serif;
+$accent: 			serif;
+$document:			serif;
+
+$tiny: 				12px;
+$sml:  				15px;
+$initial: 			16px;
+$main: 				18px;
+$mid:  				20px;
+$mdm:  				25px;
+$mod:  				30px;
+$lrg:  				40px;
+
+$sizes: (
+	"tiny": 	$tiny,
+	"sml": 		$sml,
+	"initial": 	$initial,
+	"main": 	$main,
+	"mid": 		$mid,
+	"mdm": 		$mdm,
+	"mod": 		$mod,
+	"lrg": 		$lrg,
+);
+
+// Border Radius
+
+$br: 	 4px;
+
+// Breakpoints
+
+$bp-sml: 750px;
+$bp-mdm: 1000px;
+
+// temporary helper classes
+
+.block {
+	display: block;
+}
+
+
+
+/* 
+* Configure how your code will be highlighted
+*
+* Change the variables to effect the different 
+* highlightable behavior
+*/
+
+
+:root {  
+	--whiteSpace: #C3C7C9;
+	// --whiteSpace: #646464;
+	--comment: #646464;
+	--keyword: #ffc636;
+	--property: #ffc636;
+	--operator: #ff6444;
+	--number: #00ada9;
+	// --string: #ffd945;
+	--string: #5F0F40;
+	--attribute: #00ada9;
+	--class: #ff6444;
+	--tag: #ff3f4f;
+	--font: "Lucida Console", Monaco, monospace;
+  }
+
+  
+			  /* Html Key */      /* CSS Key */
+  .t { color: var(--tag);}        /*css - id, decorator */
+  .a { color: var(--attribute);}  /*css - property */
+  .s { color: var(--string);}     /*css - value */
+  .c { color: var(--comment);}    /*css - comment */
+  .k { color: var(--keyword);}    /*css - n/a*/
+  .p { color: var(--property);}   /*css - n/a*/
+  .o { color: var(--operator);}   /*css - n/a*/
+  .n { color: var(--number);}     /*css - n/a*/
+  .l { color: var(--class);}      /*css - class */
+  
+  pre {
+	position: relative;
+	height: auto;
+  }
+  
+  code {
+	padding: .75em;
+	display: block;
+	line-height: 1.5;
+	color: #fff;
+	overflow: hidden;
+	overflow-x: scroll;
+	font-family: var(--font);
+	background-color: var(--whiteSpace);
+	white-space: pre;
+  }

@@ -1,0 +1,36 @@
+// Media Query Breakpoints
+@mixin bp($bp) {
+	@media only screen and (min-width: $bp) {
+		@content;
+	}
+}
+
+// transitions
+@mixin transition($effect: all, $time: 300ms, $easing: ease-in-out) {
+	transition: $effect $time $easing;
+}
+
+// background colors
+@mixin background($color, $hover: "null") {
+	
+	background-color: $color;
+	
+	@if $hover != "null" {
+		
+		@include transition(background-color);
+		
+		&:hover {
+			background-color: $hover;
+		}
+	}
+}
+
+// Center
+@mixin center($justify: center, $orientation: row, $wrap: nowrap) {
+	display: flex;
+	flex-flow: $orientation $wrap;
+	justify-content: $justify;
+	align-items: center;
+}
+
+

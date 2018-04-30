@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>CSS pattern library main page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dist/main.css"> 
+        <script src="https://raw.githack.com/matthewLeFevre/barrel-syntax-highlighter/master/src/barrel.js"></script>   
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <header>
+            <h1>CSS Patterns (CSS Pattern Library)</h1>
+        </header>
+        <section class="grid__full">
+            <!-- I want a two column grid here one small and the other two equal sizes -->
+
+            <!-- first column will house navigation -->
+            <nav class="grid__column--2">
+                <ul class="">
+                    <li class="">
+                        <a class="" href="">Introduction</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="">Forms</a>
+                        <!-- 
+                            - Buttons
+                            - - Regular
+                            - - Outline
+                            - - Icon
+                            - - Circular
+                            - - Long
+                            - - Full
+                            - Inputs
+                            - - Checkboxes
+                            - - Radio Inputs
+                            - - Select Dropdowns
+                            - Textareas
+                            - colors
+                         -->
+                    </li>
+                    <li class="">
+                        <a class="" href="">Grid</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="">Panels/Cards</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="">Alets</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Second column will have multiple two column elements -->
+            <div class="grid__column--10">
+                <!-- each element will contain one column for a visual example -->
+                <!-- and one column for source code/ textual explanation -->
+                <figure class="panel--element">
+                    <section class="panel--element__wrap">
+                        <div class="panel--element__container">
+                            
+                        </div>                        
+                    </section>
+                    
+                    <figcaption class="panel--element__code">
+                        <h2>Buttons</h2>
+                        <!-- Code -->
+                        
+                            <code name="html"><!-- Button -->
+<button class="btn">Button</button>
+
+<!-- Button Long -->
+<button class="btn long">Outline</button>
+
+<!-- Button Icon -->
+<button class="btn icon">Icon</button>
+
+<!-- Button round -->
+<button class="btn round">Round</button></code>
+
+                    </figcaption>
+                </figure>
+            </div>
+
+        </section>
+    </body>
+</html>
