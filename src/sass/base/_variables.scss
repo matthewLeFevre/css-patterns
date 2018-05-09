@@ -22,6 +22,7 @@ $greys: (
 );
 
 $grey: 				$grey-300;
+$grey-opac:			rgba(0,0,0,.3);
 $blue: 				#084887;
 $green: 			#56BF00;
 $yellow: 			#FFCC42;
@@ -48,6 +49,7 @@ $colors: (
 	"queen":	$queen,
 	"spring":   $spring,
 	"purple":   $purple,
+	"white":    $white,
 );
 
 // Typography
@@ -82,8 +84,10 @@ $br: 	 4px;
 
 // Breakpoints
 
+$bp-tiny: 650px;
 $bp-sml: 750px;
 $bp-mdm: 1000px;
+$bp-lrg: 1200px;
 
 // temporary helper classes
 
@@ -114,7 +118,8 @@ $bp-mdm: 1000px;
 	--attribute: #00ada9;
 	--class: #ff6444;
 	--tag: #ff3f4f;
-	--font: "Lucida Console", Monaco, monospace;
+	// --font: "Lucida Console", Monaco, monospace;
+	--font:  Monaco, 'Courier New', Courier, monospace;
   }
 
   
@@ -138,10 +143,11 @@ $bp-mdm: 1000px;
 	padding: .75em;
 	display: block;
 	line-height: 1.5;
-	color: #fff;
+	color: $purple;
 	overflow: hidden;
 	overflow-x: scroll;
 	font-family: var(--font);
 	background-color: var(--whiteSpace);
 	white-space: pre;
+	font-size: 14px;
   }

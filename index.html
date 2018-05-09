@@ -1,88 +1,43 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <title>CSS pattern library main page</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="dist/main.css"> 
-        <script src="https://raw.githack.com/matthewLeFevre/barrel-syntax-highlighter/master/src/barrel.js"></script>   
-        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
-        <header>
-            <h1>CSS Patterns (CSS Pattern Library)</h1>
-        </header>
-        <section class="grid__full">
-            <!-- I want a two column grid here one small and the other two equal sizes -->
 
-            <!-- first column will house navigation -->
-            <nav class="grid__column--2">
-                <ul class="">
-                    <li class="">
-                        <a class="" href="">Introduction</a>
-                    </li>
-                    <li class="">
-                        <a class="" href="">Forms</a>
-                        <!-- 
-                            - Buttons
-                            - - Regular
-                            - - Outline
-                            - - Icon
-                            - - Circular
-                            - - Long
-                            - - Full
-                            - Inputs
-                            - - Checkboxes
-                            - - Radio Inputs
-                            - - Select Dropdowns
-                            - Textareas
-                            - colors
-                         -->
-                    </li>
-                    <li class="">
-                        <a class="" href="">Grid</a>
-                    </li>
-                    <li class="">
-                        <a class="" href="">Panels/Cards</a>
-                    </li>
-                    <li class="">
-                        <a class="" href="">Alets</a>
-                    </li>
-                </ul>
-            </nav>
+<head>
+    <title>CSS pattern library main page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/main.css">
+    <script src="https://raw.githack.com/matthewLeFevre/barrel-syntax-highlighter/master/src/barrel.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
 
-            <!-- Second column will have multiple two column elements -->
-            <div class="grid__column--10">
-                <!-- each element will contain one column for a visual example -->
-                <!-- and one column for source code/ textual explanation -->
-                <figure class="panel--element">
-                    <section class="panel--element__wrap">
-                        <div class="panel--element__container">
-                            
-                        </div>                        
-                    </section>
-                    
-                    <figcaption class="panel--element__code">
-                        <h2>Buttons</h2>
-                        <!-- Code -->
-                        
-                            <code name="html"><!-- Button -->
-<button class="btn">Button</button>
+</head>
 
-<!-- Button Long -->
-<button class="btn long">Outline</button>
+<body>
+    <section class="grid">
+        <div class="grid__column--12 bg-queen">
+            <h1 class="txt-white">Forms Demonstration</h1>
+        </div>
 
-<!-- Button Icon -->
-<button class="btn icon">Icon</button>
+        <div class="grid__column--4"></div>
+        <div class="grid__column--8">
+            <form action="" class="form">
+                <h2 class="form__title">All form elemtents</h2>
+                <span class="form__sub-title">Form sub-title</span>
 
-<!-- Button round -->
-<button class="btn round">Round</button></code>
+                <div class="form__pair">
+                    <label for="" class="form__label top">Text label</label>
+                    <input type="text" class="form__field">
+                </div>
 
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="form__pair">
+                    <input name="ckbx-1" id="ckbx-1" type="checkbox" class="form__field--checkbox">
+                    <label for="ckbx-1" class="form__label--checkbox">Male</label>
+                    <input name="ckbx-2" id="ckbx-2" type="checkbox" class="form__field--checkbox">
+                    <label for="ckbx-2" class="form__label--checkbox">Female</label>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
 
-        </section>
-    </body>
 </html>

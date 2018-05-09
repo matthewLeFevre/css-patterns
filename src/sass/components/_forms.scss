@@ -1,0 +1,58 @@
+.form {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 25px;
+}
+
+.form__title {}
+.form__sub-title {}
+
+.form__pair { margin: 1em 0; }
+.form__label { 
+    font-size: $main;
+
+    &.top {
+        display: block;
+    }
+}
+.form__field {
+    font-size: $main;
+    border: 0;
+    background-color: $grey-opac;
+    border-radius: 3px;
+    padding: .25em;
+    &:focus {
+        outline-color: $queen;
+    }
+    &.full {
+        display: block;
+        width: 100%;
+    }
+}
+
+.form__label--checkbox {
+    font-size: $main;
+    cursor: pointer;
+}
+.form__label--checkbox::after {
+    content: '';
+    display: inline-block;
+    height: $main;
+    width: $main;
+    border: $queen 1px solid;
+    margin: 0 .75em;
+    vertical-align: middle;
+    border-radius: 3px;
+    transition: background-color 200ms ease;
+}
+.form__field--checkbox { 
+    visibility: hidden;
+    position: absolute;
+    // find a good place to hide this
+}
+
+.form__field--checkbox:checked + .form__label--checkbox::after {
+    background-color: $spring;
+}
+

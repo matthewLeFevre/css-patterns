@@ -5,6 +5,9 @@ $btn-types: "full" "icon" "round" "long";
 // button
 
 @mixin btn() {
+	margin: .1em 0;
+	text-decoration: none;
+	line-height: 1;
 	padding: .75em 1.75em;
 	width: auto;
 	background-color: $grey;
@@ -13,6 +16,7 @@ $btn-types: "full" "icon" "round" "long";
 	font-family: $main-font;
 	font-size: $initial;
 	color: $white;
+	display: inline-block;
 	cursor: pointer;
 	@include transition(all, 200ms);
 	
@@ -22,6 +26,10 @@ $btn-types: "full" "icon" "round" "long";
 			border-color: $grey;
 			color: $grey;
 		}
+	}
+
+	&:hover {
+		opacity: .7;
 	}
 	
 	&.outline {

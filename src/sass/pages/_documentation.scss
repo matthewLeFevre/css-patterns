@@ -1,0 +1,47 @@
+.doc__header {
+    padding: .5em;
+}
+
+.doc__section {
+    padding: 1em;
+}
+
+.doc__section:nth-child(odd) {
+    background-color: $grey-100;
+}
+
+.doc__section__title {
+    margin-bottom: .5em;
+}
+.doc__element__title {
+    margin-bottom: .5em;
+}
+.doc__element__paragraph {
+    margin-bottom: .5em;
+}
+
+.doc__nav__list {
+    list-style: none;
+
+    @include bp($bp-sml) {
+        position: fixed;
+    }
+    
+}
+.doc__nav__item {
+    width: 100%;
+    margin: .3em 0;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+}
+.doc__nav__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: $main;
+    color: $black;
+    text-decoration: none;
+}
