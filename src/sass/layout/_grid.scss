@@ -4,7 +4,7 @@ $columns: (
     "--3": 3,
     "--4": 4,
     "--5": 5,
-    "--6": 8,
+    "--6": 6,
     "--7": 7,
     "--8": 8,
     "--9": 9,
@@ -13,18 +13,26 @@ $columns: (
     "--12": 12,
 );
 
-@mixin grid($type: "grid") {
+$grid-sizes: (
+    "--base": "no bp",
+    "--tiny": $bp-tiny,
+    "--sml": $bp-sml,
+    "--mdm": $bp-mdm,
+    "--lrg": $bp-lrg,
+);
+
+@mixin grid($type: "grid", $limit: 1200px, $pad: .75em) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 	grid-auto-rows: minmax(50px, auto);
     margin: 0 auto;
     @if $type == "grid--padded" {
-        grid-gap: .75em;
+        grid-gap: $pad;
     } @else if $type == "grid--limited" {
-        max-width: 1200px;
+        max-width: $limit;
     } @else if $type == "grid--limited-padded" {
-        grid-gap: .75em;
-        max-width: 1200px;
+        grid-gap: $pad;
+        max-width: $limit;
     }
 }
 
@@ -34,14 +42,28 @@ $columns: (
 .grid--limited { @include grid("grid--limited"); }
 .grid--limited-padded { @include grid("grid--limited-padded"); }
 
-
-
 .grid__column {
     @each $column, $number in $columns {
         &#{$column} {
             grid-column: span 12;
             @include bp($bp-sml) {
                 grid-column: span $number;
+            }
+        }
+    }
+
+    @each $size, $bp in $grid-sizes {
+        &#{$size} {
+            @each $column, $number in $columns {
+                &#{$column} {
+                    @if $size != "--base" {
+                        @include bp($bp) {
+                            grid-column: span $number;
+                        }
+                    } @else {
+                        grid-column: span $number;
+                    }
+                }
             }
         }
     }
@@ -53,6 +75,36 @@ $columns: (
     width: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: min-max(25px, auto);
+}
+
+.grid__image-container {
+    overflow: hidden;
+    min-height: 200px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @include bp($bp-tiny) {
+        height: 210px;
+    }
+
+    @include bp($bp-sml) {
+        height: 150px;
+    }
+
+    @include bp($bp-mdm) {
+        height: 200px;
+    }
+
+    @include bp($bp-lrg) {
+        height: 250px;
+    }
+}
+
+.grid__image {
+    display: block;
+    width: 100%;
 }
 
 .grid--element__column {

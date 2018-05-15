@@ -18,10 +18,9 @@
 }
 .form__field {
     font-size: $main;
-    border: 0;
-    background-color: $grey-opac;
+    border: 1px $grey-opac solid;
     border-radius: 3px;
-    padding: .25em;
+    padding: .35em;
     &:focus {
         outline-color: $queen;
     }
