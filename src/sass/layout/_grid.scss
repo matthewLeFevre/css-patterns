@@ -46,7 +46,15 @@ $grid-sizes: (
     @each $column, $number in $columns {
         &#{$column} {
             grid-column: span 12;
+            @include bp($bp-tiny) {
+                @if $number <= 6 {
+                    grid-column: span 6;
+                }
+            }
             @include bp($bp-sml) {
+                
+            }
+            @include bp($bp-mdm) {
                 grid-column: span $number;
             }
         }
