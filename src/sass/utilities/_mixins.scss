@@ -62,8 +62,7 @@
 @mixin grid($type: "grid", $limit: 1200px, $pad: .75em) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-	// grid-auto-rows: minmax(50px, auto);
-	grid-auto-rows: auto;
+	grid-auto-rows: minmax(50px, auto);
     margin: 0 auto;
     @if $type == "grid--padded" {
         grid-gap: $pad;

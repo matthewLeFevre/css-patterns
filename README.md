@@ -1,2 +1,2 @@
 # css-patterns
-Mature CSS pattern library
+Example CSS pattern library
