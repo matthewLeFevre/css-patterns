@@ -89,11 +89,43 @@ $bp-sml: 750px;
 $bp-mdm: 1000px;
 $bp-lrg: 1200px;
 
+$break-points: (
+	"tiny": $bp-tiny,
+	"sml":  $bp-sml,
+	"mdm":  $bp-mdm,
+	"lrg":  $bp-lrg
+);
+
 // temporary helper classes
 
 .block {
 	display: block;
 }
+
+// Css Grid Variables
+
+$columns: (
+    "--1": 1,
+    "--2": 2,
+    "--3": 3,
+    "--4": 4,
+    "--5": 5,
+    "--6": 6,
+    "--7": 7,
+    "--8": 8,
+    "--9": 9,
+    "--10": 10,
+    "--11": 11,
+    "--12": 12,
+);
+
+$grid-sizes: (
+    "--base": "no bp",
+    "--tiny": $bp-tiny,
+    "--sml":  $bp-sml,
+    "--mdm":  $bp-mdm,
+    "--lrg":  $bp-lrg,
+);
 
 
 

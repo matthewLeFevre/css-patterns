@@ -1,48 +1,14 @@
-$columns: (
-    "--1": 1,
-    "--2": 2,
-    "--3": 3,
-    "--4": 4,
-    "--5": 5,
-    "--6": 6,
-    "--7": 7,
-    "--8": 8,
-    "--9": 9,
-    "--10": 10,
-    "--11": 11,
-    "--12": 12,
-);
-
-$grid-sizes: (
-    "--base": "no bp",
-    "--tiny": $bp-tiny,
-    "--sml": $bp-sml,
-    "--mdm": $bp-mdm,
-    "--lrg": $bp-lrg,
-);
-
-@mixin grid($type: "grid", $limit: 1200px, $pad: .75em) {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-	grid-auto-rows: minmax(50px, auto);
-    margin: 0 auto;
-    @if $type == "grid--padded" {
-        grid-gap: $pad;
-    } @else if $type == "grid--limited" {
-        max-width: $limit;
-    } @else if $type == "grid--limited-padded" {
-        grid-gap: $pad;
-        max-width: $limit;
-    }
-}
-
-
+// the grid class and its variants can work as individual rows or if columns are configured
+// in such a way one grid can represent multiple rows
 .grid { @include grid; }
 .grid--padded { @include grid("grid--padded"); }
 .grid--limited { @include grid("grid--limited"); }
 .grid--limited-padded { @include grid("grid--limited-padded"); }
 
 .grid__column {
+    
+    // This is a responsive option for creating grid columns
+    // Syntax: class="grid__column--3"
     @each $column, $number in $columns {
         &#{$column} {
             grid-column: span 12;
@@ -54,12 +20,16 @@ $grid-sizes: (
             @include bp($bp-sml) {
                 
             }
-            @include bp($bp-mdm) {
+            @include bp-mdm() {
                 grid-column: span $number;
             }
         }
     }
 
+    // This is a non-responsive option for creating frid columns
+    // However by adding multiple classes the exact sizes can be applied at each
+    // breakpoint making it responsive exactly to your needs
+    // Syntax: class="grid__column--12--base grid__column--6--tiny grid__column--3--mdm"
     @each $size, $bp in $grid-sizes {
         &#{$size} {
             @each $column, $number in $columns {
