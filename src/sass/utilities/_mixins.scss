@@ -74,4 +74,16 @@
     }
 }
 
+// Image mixins
+
+@mixin img () {
+	vertical-align: center;
+	border: 0;
+}
+
+@mixin img--responsive($max-width: 100%) {
+	max-width: $max-width;
+	@include img;
+}
+
 
