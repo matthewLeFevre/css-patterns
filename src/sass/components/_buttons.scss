@@ -100,16 +100,7 @@ $btn-types: "full" "icon" "round" "long";
 				}
 			}	
 		}
-	}
-	
-	@each $alert, $value in $alerts {
-		&.#{$alert} {
-			background-color: $value;
-			border-color: $value;
-			color: $white;
-		}
-	}
-	
+	}	
 };
 
 .btn {

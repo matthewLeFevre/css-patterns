@@ -47,39 +47,6 @@
     }
 }
 
-.grid--element {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: min-max(25px, auto);
-}
-
-.grid__image-container {
-    overflow: hidden;
-    min-height: 200px;
-    max-height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    @include bp($bp-tiny) {
-        height: 210px;
-    }
-
-    @include bp($bp-sml) {
-        height: 150px;
-    }
-
-    @include bp($bp-mdm) {
-        height: 200px;
-    }
-
-    @include bp($bp-lrg) {
-        height: 250px;
-    }
-}
-
 .grid__image {
     display: block;
     width: 100%;
@@ -93,8 +60,5 @@
     }
 }
 
-.divider {
-    margin: .5em;
-}
 
 

@@ -1,0 +1,110 @@
+// Variables
+
+// 1. Colors
+// 2. Typography
+
+// Colors
+
+$white:    			#fff;
+$black:    			#000;
+$grey: 				#697479;
+$blue: 				#084887;
+$green: 			#56BF00;
+$yellow: 			#FFCC42;
+$red: 				#D33115;
+$purple:			#5F0F40;
+
+
+$colors: (
+	"grey": 	$grey,
+	"blue": 	$blue,
+	"green": 	$green,
+	"yellow":	$yellow,
+	"red":		$red,
+	"spring":   $spring,
+	"purple":   $purple,
+	"white":    $white,
+);
+
+$grey-100: 		#C3C7C9;
+$grey-200: 		#91999D;
+$grey-300: 		#697479;
+$grey-400: 		#5A676C;
+$grey-500: 		#4A585E;
+
+$grey-scale: (
+	"100": 			$grey-100,
+	"200": 			$grey-200,
+	"300": 			$grey-300,
+	"400": 			$grey-400,
+	"500": 			$grey-500
+);
+
+// Typography
+
+$main-font:   		sans-serif;
+$accent: 			serif;
+$document:			serif;
+
+$tiny: 				12px;
+$sml:  				15px;
+$initial: 			16px;
+$main: 				18px;
+$mid:  				20px;
+$mdm:  				25px;
+$mod:  				30px;
+$lrg:  				40px;
+
+$sizes: (
+	"tiny": 	$tiny,
+	"sml": 		$sml,
+	"initial": 	$initial,
+	"main": 	$main,
+	"mid": 		$mid,
+	"mdm": 		$mdm,
+	"mod": 		$mod,
+	"lrg": 		$lrg,
+);
+
+// Border Radius
+
+$br: 	 4px;
+
+// Breakpoints
+
+$bp-tiny: 650px;
+$bp-sml: 750px;
+$bp-mdm: 1000px;
+$bp-lrg: 1200px;
+
+$break-points: (
+	"tiny": $bp-tiny,
+	"sml":  $bp-sml,
+	"mdm":  $bp-mdm,
+	"lrg":  $bp-lrg
+);
+
+// Grid Variables
+
+$columns: (
+    "--1": 1,
+    "--2": 2,
+    "--3": 3,
+    "--4": 4,
+    "--5": 5,
+    "--6": 6,
+    "--7": 7,
+    "--8": 8,
+    "--9": 9,
+    "--10": 10,
+    "--11": 11,
+    "--12": 12,
+);
+
+$grid-sizes: (
+    "--base": "no bp",
+    "--tiny": $bp-tiny,
+    "--sml":  $bp-sml,
+    "--mdm":  $bp-mdm,
+    "--lrg":  $bp-lrg,
+);
