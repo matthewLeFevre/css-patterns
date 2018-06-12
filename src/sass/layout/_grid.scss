@@ -1,9 +1,38 @@
 // the grid class and its variants can work as individual rows or if columns are configured
 // in such a way one grid can represent multiple rows
-.grid { @include grid; }
-.grid--padded { @include grid("grid--padded"); }
-.grid--limited { @include grid("grid--limited"); }
-.grid--limited-padded { @include grid("grid--limited-padded"); }
+
+.grid { @include grid;}
+@each $size, $break in $grid-sizes {
+    .grid#{$size} {
+        @include bp($break) {
+            @include grid; 
+        }
+    }
+}
+.grid--padded { @include grid("grid--padded");}
+@each $size, $break in $grid-sizes {
+    .grid--padded#{$size} {
+        @include bp($break) {
+            @include grid("grid--padded"); 
+        }
+    }
+}
+.grid--limited { @include grid("grid--limited");}
+@each $size, $break in $grid-sizes {
+    .grid--limited#{$size} {
+        @include bp($break) {
+            @include grid("grid--limited"); 
+        }
+    }
+}
+.grid--limited-padded { @include grid("grid--limited-padded");}
+@each $size, $break in $grid-sizes {
+    .grid--limited-padded#{$size} {
+        @include bp($break) {
+            @include grid("grid--limited-padded");
+        }
+    }
+}
 
 .grid__column {
     
@@ -26,10 +55,10 @@
         }
     }
 
-    // This is a non-responsive option for creating frid columns
+    // This is a non-responsive option for creating grid columns
     // However by adding multiple classes the exact sizes can be applied at each
     // breakpoint making it responsive exactly to your needs
-    // Syntax: class="grid__column--12--base grid__column--6--tiny grid__column--3--mdm"
+    // Syntax: class="grid__column--base--12 grid__column--tiny--6 grid__column--mdm--3"
     @each $size, $bp in $grid-sizes {
         &#{$size} {
             @each $column, $number in $columns {

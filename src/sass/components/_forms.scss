@@ -18,11 +18,11 @@
 }
 .form__field {
     font-size: $main;
-    border: 1px $grey-opac solid;
+    border: 1px $grey solid;
     border-radius: 3px;
     padding: .35em;
     &:focus {
-        outline-color: $queen;
+        outline-color: $blue;
     }
     &.full {
         display: block;
@@ -39,7 +39,7 @@
     display: inline-block;
     height: $main;
     width: $main;
-    border: $queen 1px solid;
+    border: $blue 1px solid;
     margin: 0 .75em;
     vertical-align: middle;
     border-radius: 3px;
@@ -52,6 +52,6 @@
 }
 
 .form__field--checkbox:checked + .form__label--checkbox::after {
-    background-color: $spring;
+    background-color: $green;
 }
 
