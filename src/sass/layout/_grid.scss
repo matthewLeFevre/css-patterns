@@ -2,32 +2,32 @@
 // in such a way one grid can represent multiple rows
 
 .grid { @include grid;}
-@each $size, $break in $grid-sizes {
-    .grid#{$size} {
+@each $size, $break in $break-points {
+    .grid--#{$size} {
         @include bp($break) {
             @include grid; 
         }
     }
 }
 .grid--padded { @include grid("grid--padded");}
-@each $size, $break in $grid-sizes {
-    .grid--padded#{$size} {
+@each $size, $break in $break-points {
+    .grid--padded--#{$size} {
         @include bp($break) {
             @include grid("grid--padded"); 
         }
     }
 }
 .grid--limited { @include grid("grid--limited");}
-@each $size, $break in $grid-sizes {
-    .grid--limited#{$size} {
+@each $size, $break in $break-points {
+    .grid--limited--#{$size} {
         @include bp($break) {
             @include grid("grid--limited"); 
         }
     }
 }
 .grid--limited-padded { @include grid("grid--limited-padded");}
-@each $size, $break in $grid-sizes {
-    .grid--limited-padded#{$size} {
+@each $size, $break in $break-points {
+    .grid--limited-padded--#{$size} {
         @include bp($break) {
             @include grid("grid--limited-padded");
         }
