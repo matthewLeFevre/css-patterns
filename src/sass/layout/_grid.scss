@@ -39,7 +39,7 @@
     // This is a responsive option for creating grid columns
     // Syntax: class="grid__column--3"
     @each $column, $number in $columns {
-        &#{$column} {
+        &--#{$column} {
             grid-column: span 12;
             @include bp($bp-tiny) {
                 @if $number <= 6 {
@@ -60,9 +60,9 @@
     // breakpoint making it responsive exactly to your needs
     // Syntax: class="grid__column--base--12 grid__column--tiny--6 grid__column--mdm--3"
     @each $size, $bp in $grid-sizes {
-        &#{$size} {
+        &--#{$size} {
             @each $column, $number in $columns {
-                &#{$column} {
+                &--#{$column} {
                     @if $size != "--base" {
                         @include bp($bp) {
                             grid-column: span $number;
