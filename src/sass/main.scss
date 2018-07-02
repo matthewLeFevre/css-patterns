@@ -1,9 +1,13 @@
-@import "base/config";
-@import "base/base";
+
+@import "base/variables";
+@import "base/reset";
+
 @import "utilities/mixins";
 @import "utilities/color";
 @import "utilities/sizes";
+
 @import "layout/grid";
+
 @import "components/forms";
 @import "components/alerts";
 @import "components/buttons";

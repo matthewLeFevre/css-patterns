@@ -80,14 +80,3 @@
     display: block;
     width: 100%;
 }
-
-.grid--element__column {
-    @each $column, $number in $columns {
-        &#{$column} {
-            grid-column: span $number;
-        }
-    }
-}
-
-
-

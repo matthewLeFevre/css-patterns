@@ -113,39 +113,3 @@ $panel-types: (
 	margin-bottom: .5em;
 	display: block;
 }
-
-// This code is not part of css-patterns it is used to help create the documentation and should be removed
-.panel--element {
-	// background-color: $grey-100;
-	@include center(center, column);
-	@include bp($bp-sml) {
-		@include center;
-	}
-}
-
-
-.panel--element__wrap {
-	@include center;
-	height: 100%;
-	flex-grow: 1;
-	width: 100%;
-	padding: 1em;
-	text-align: center;
-	@include bp($bp-sml) {
-		width: 50%;
-	}
-
-	&.column {
-		@include center(center, column);
-	}
-}
-
-.panel--element__code {
-	flex-grow: 1;
-	height: 100%;
-	width: 100%;
-	padding: 1em;
-	@include bp($bp-sml) {
-		width: 50%;
-	}
-}

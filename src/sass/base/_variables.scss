@@ -1,9 +1,21 @@
 // Variables
-
-// 1. Colors
-// 2. Typography
+//
+// Feel free to add your own variables to this 
+// file to accomodate the styling needs of 
+// your project
+// 
+// It is recommended that you stay clear of some
+// variables and lists so that css-patterns basic
+// functional needs can be met
 
 // Colors
+
+// css patterns basic colors
+// 
+// feel free to add or change the values here
+// if youw ant your own colors to effect css-patterns
+// classes it is recommended you add them to the 
+// '$colors' list
 
 $white:    			#fff;
 $black:    			#000;
@@ -14,6 +26,8 @@ $yellow: 			#FFCC42;
 $red: 				#D33115;
 $purple:			#5F0F40;
 
+// Add your colors so you can use the
+// '.bg' and '.txt' classes
 
 $colors: (
 	"grey": 	$grey,
@@ -25,11 +39,17 @@ $colors: (
 	"white":    $white,
 );
 
+// Not a requirement to have these
+// greys but they are here if you need them
+
 $grey-100: 		#C3C7C9;
 $grey-200: 		#91999D;
 $grey-300: 		#697479;
 $grey-400: 		#5A676C;
 $grey-500: 		#4A585E;
+
+// This list can be deleted it is not used
+// in any other area of the library
 
 $grey-scale: (
 	"100": 			$grey-100,
@@ -39,12 +59,19 @@ $grey-scale: (
 	"500": 			$grey-500
 );
 
+
+
 // Typography
+//
+// Add your own fonts or alter
+// these pre-assigned ones to fit 
+// your application needs
 
 $main-font:   		sans-serif;
 $accent: 			serif;
 $document:			serif;
 
+// Recommended sizes
 $tiny: 				12px;
 $sml:  				15px;
 $initial: 			16px;
@@ -65,9 +92,13 @@ $sizes: (
 	"lrg": 		$lrg,
 );
 
+
+
 // Border Radius
 
 $br: 	 4px;
+
+
 
 // Breakpoints
 
@@ -83,7 +114,9 @@ $break-points: (
 	"lrg":  $bp-lrg
 );
 
-// Grid Variables
+
+
+// Grid Variables -- change at your own risk --
 
 $columns: (
     "1": 1,
@@ -107,3 +140,7 @@ $grid-sizes: (
     "mdm":  $bp-mdm,
     "lrg":  $bp-lrg,
 );
+
+// button types
+
+$btn-types: "full" "icon" "round" "long";
