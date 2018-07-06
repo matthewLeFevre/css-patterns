@@ -63,7 +63,7 @@
         &--#{$size} {
             @each $column, $number in $columns {
                 &--#{$column} {
-                    @if $size != "--base" {
+                    @if $size != "base" {
                         @include bp($bp) {
                             grid-column: span $number;
                         }

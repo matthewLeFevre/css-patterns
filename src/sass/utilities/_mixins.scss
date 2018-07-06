@@ -3,7 +3,7 @@
 // Generic custom breakpoint mixin
 // 
 // Makes life really easy but it does spam
-// media queries inthe library which adds to
+// media queries in the library which adds to
 // dozens if not hundreds of lines of repeated code
 
 @mixin bp($bp) {
@@ -56,6 +56,8 @@
 }
 
 // background colors
+// set the background and hover colors of an element 
+// in one mixin
 @mixin background($color, $hover: "null") {
 	
 	background-color: $color;
@@ -92,8 +94,8 @@
 // grid classes
 
 @mixin grid($type: "grid", 
-			$limit: 1200px, 
-			$pad: .75em) {
+			$limit: $limited-grid-size, 
+			$pad: $padded-grid-padding) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 	grid-auto-rows: minmax(50px, auto);
@@ -117,8 +119,8 @@
 
 @mixin custom-grid($type: "grid", 
 				   $columns: 12, 
-				   $limit: 1200px, 
-				   $pad: .75em) {
+				   $limit: $limited-grid-size, 
+				   $pad: $padded-grid-padding) {
 	display: grid;
 	grid-template-columns: repeat($columns, 1fr);
 	grid-auto-rows: minmax(50px, auto);
@@ -169,3 +171,47 @@
 }
 
 
+
+// Panel Mixins
+
+@mixin panel($type) {
+	@if $type == "basic" {
+		display: flex;
+		margin: 1em auto;
+		text-decoration: none;
+		color: #000;
+		width: 230px;
+		height: 300px;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.15);
+		padding: 0;
+		@include bp-tiny() {
+			margin: 1em .5em;
+		}
+
+		& > .panel--img--wrap {
+			min-width: 100%;
+			max-width: 100%;
+			max-height: 130px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+	} @else if $type == "responsive" {
+		display: flex;
+		border-bottom: 2px solid rgba(0,0,0,.5);
+		padding-bottom: .5em;
+		margin: 1em .5em;
+		height: auto;
+		text-decoration: none;
+		color: #000;
+		@include bp ($bp-tiny) {
+			width: 230px;
+			height: 300px;
+			display: block;
+			border-bottom: none;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.15);
+			padding: 0;
+		}
+	}
+}

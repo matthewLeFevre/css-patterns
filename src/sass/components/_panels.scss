@@ -1,10 +1,6 @@
-// Panel Description
-//
-// Panel wrapper - can be any element but most comonly should use links, figures, or divs
-// - Panel image wrapper
-// -- panel image
-// - Panel caption(text)
-// -- Any kind of text
+// A panel grid is a containers that
+// governs the layout of multiple panels 
+// in a row
 
 .panel__grid {
 	@include bp($bp-tiny) {
@@ -17,61 +13,22 @@
 	}
 }
 
-@mixin panel($type) {
-	@if $type == "basic" {
-		display: flex;
-		margin: 1em auto;
-		text-decoration: none;
-		color: #000;
-		width: 230px;
-		height: 300px;
-		display: block;
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.15);
-		padding: 0;
-		@include bp-tiny() {
-			margin: 1em .5em;
-		}
+// Panel Description
+//
+// Panel wrapper - can be any element but most comonly should use anchors, figures, or divs
+// - Panel image wrapper
+// -- panel image
+// - Panel caption(text)
+// -- Any kind of text
 
-		& > .panel--img--wrap {
-			min-width: 100%;
-			max-width: 100%;
-			max-height: 130px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			overflow: hidden;
-		}
-	} @else if $type == "responsive" {
-		display: flex;
-		border-bottom: 2px solid rgba(0,0,0,.5);
-		padding-bottom: .5em;
-		margin: 1em .5em;
-		height: auto;
-		text-decoration: none;
-		color: #000;
-		@include bp ($bp-tiny) {
-			width: 230px;
-			height: 300px;
-			display: block;
-			border-bottom: none;
-			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.15);
-			padding: 0;
-		}
-	}
-}
-
-$panel-types: (
-	"--basic": "basic",
-	"--responsive": "responsive",
-);
 .panel {
-	@each $type, $value in $panel-types {
-		&#{$type} {
-			@include panel($value);
+	@each $type in $panel-types {
+		&--#{$type} {
+			@include panel($type);
 		}
 	}
 }
-.panel--img--wrap {
+.panel__img--wrap {
 	min-width: 125px; 
 	max-width: 125px;
 	max-height: 125px;
@@ -85,31 +42,31 @@ $panel-types: (
 		align-items: center;
 	}
 }
-.panel--img {
+.panel__img {
 	width: 100%;
 	height: auto;
 	display: block;
 }
-.panel--tag {display: none;}
-.panel--caption {
+.panel__tag {display: none;}
+.panel__caption {
 	padding-left: 1em;
 	@include bp($bp-tiny) {
 		padding: 1em .5em;
 	}
 }
-.panel--title {
+.panel__title {
 	font-family: $main-font;
 	font-size: $main;
 	font-weight: 500;
 	margin-top: 0;
 	margin-bottom: .5em;
 }
-.panel--author {
+.panel__author {
 	font-family: $main-font;
 	font-size: $sml;
 	margin-top: 0;
 }
-.panel-rating {
+.panel__rating {
 	margin-bottom: .5em;
 	display: block;
 }

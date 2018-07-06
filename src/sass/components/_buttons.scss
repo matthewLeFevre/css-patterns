@@ -16,6 +16,11 @@
 	cursor: pointer;
 	@include transition(all, 200ms);
 	
+	&:hover {
+		opacity: .7;
+	}
+
+	// More contrast on hover with default button colors
 	&.hoverable {
 		&:hover {
 			background-color: $white;
@@ -24,10 +29,7 @@
 		}
 	}
 
-	&:hover {
-		opacity: .7;
-	}
-	
+	// Default button outline
 	&.outline {
 		background-color: $white;
 		border-color: $grey;
@@ -41,13 +43,7 @@
 		}
 	}
 	
-	// &.block {
-	// 	display: block;
-	// 	margin: .25em 0;
-	// 	width: auto;
-	// 	margin-left: auto;
-	// }
-	
+	// Styles for each type of button
 	@each $type in $btn-types {
 		
 		&.#{$type} {
@@ -69,7 +65,8 @@
 
 	}
 	
-	@each $color, $value in $colors {
+	// Styles for each color of button
+	@each $color, $value in $btn-colors {
 		&.#{$color} {
 			background-color: $value;
 			border-color: $value;

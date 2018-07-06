@@ -15,7 +15,9 @@
 // feel free to add or change the values here
 // if youw ant your own colors to effect css-patterns
 // classes it is recommended you add them to the 
-// '$colors' list
+// '$colors' list 
+// *WARNING*: Other lists are dependent on this list
+// Button Colors are dependent
 
 $white:    			#fff;
 $black:    			#000;
@@ -37,6 +39,19 @@ $colors: (
 	"red":		$red,
 	"purple":   $purple,
 	"white":    $white,
+);
+
+// Button colors
+// The `$colors` map can be used to generate 
+// button variations or a this default button 
+// map can be used to 
+
+$btn-colors: (
+	"primary": 	$blue,
+	"secondary":$green,
+	"success": 	$green,
+	"alert": 	$red,
+	"warning": 	$yellow
 );
 
 // Not a requirement to have these
@@ -72,14 +87,14 @@ $accent: 			serif;
 $document:			serif;
 
 // Recommended sizes
-$tiny: 				12px;
-$sml:  				15px;
-$initial: 			16px;
-$main: 				18px;
-$mid:  				20px;
-$mdm:  				25px;
-$mod:  				30px;
-$lrg:  				40px;
+$tiny: 				.75em;
+$sml:  				.90em;
+$initial: 			1em;
+$main: 				1.125em;
+$mid:  				1.25em;
+$mdm:  				1.6em;
+$mod:  				1.9em;
+$lrg:  				2.5em;
 
 $sizes: (
 	"tiny": 	$tiny,
@@ -96,16 +111,16 @@ $sizes: (
 
 // Border Radius
 
-$br: 	 4px;
+$br: 	 .25em;
 
 
 
 // Breakpoints
 
-$bp-tiny: 650px;
-$bp-sml: 750px;
-$bp-mdm: 1000px;
-$bp-lrg: 1200px;
+$bp-tiny: 40em;
+$bp-sml:  48em;
+$bp-mdm:  62.5em;
+$bp-lrg:  75em;
 
 $break-points: (
 	"tiny": $bp-tiny,
@@ -141,6 +156,13 @@ $grid-sizes: (
     "lrg":  $bp-lrg,
 );
 
+$limited-grid-size: 75em;
+$padded-grid-padding: .75em;
+
 // button types
 
 $btn-types: "full" "icon" "round" "long";
+
+// Panel types
+
+$panel-types: "basic" "responsive";
