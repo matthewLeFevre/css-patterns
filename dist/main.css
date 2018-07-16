@@ -616,23 +616,46 @@ body {
   right: 0;
   bottom: 0; }
 
-.input--radio:checked + .label--radio::after {
-  background-color: #56BF00; }
+.input--radio:checked + .label--radio::before {
+  background-color: #4A585E; }
+
+.input--radio__set {
+  padding: .5em; }
 
 .label--radio {
   font-size: 1.125em;
-  cursor: pointer; }
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0; }
   .label--radio:after {
     content: '';
-    display: inline-block;
+    position: absolute;
     height: 0.9em;
     width: 0.9em;
-    border: #084887 1px solid;
-    margin: 0 .75em;
+    border: #4A585E 1px solid;
     vertical-align: middle;
     border-radius: 50%;
     -webkit-transition: background-color 200ms ease;
     transition: background-color 200ms ease; }
+  .label--radio::before {
+    content: '';
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: transparent;
+    border-radius: 50%; }
+
+.label--radio__text {
+  margin-bottom: .5em;
+  display: block; }
 
 .form__label--checkbox {
   font-size: 1.125em;
@@ -643,7 +666,7 @@ body {
   display: inline-block;
   height: 1.125em;
   width: 1.125em;
-  border: #084887 1px solid;
+  border: #4A585E 1px solid;
   margin: 0 .75em;
   vertical-align: middle;
   border-radius: 3px;

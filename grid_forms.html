@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/main.css">
+</head>
+
+<body class="bg-blue grid">
+  <header class="grid__column--base--12 bg-grey"></header>
+
+
+  <main class="grid--nested grid__column--base--12">
+    <form class="grid--nested grid__column--base--12 grid__column--mdm--8">
+      <h1 class="grid__column--base--12 txt-white">Test Form</h1>
+      <fieldset class="grid__column--6 bg-purple form__field">
+        <label class="form__label txt-white" for="">First Name</label>
+        <input class="input--text breath full" type="text">
+        <laebl class="form__label txt-white" for="">Last Name</label>
+        <input class="input--text breath full" type="text">
+      </fieldset>
+      <fieldset class="grid__column--6 bg-grey form__field">
+        <div class="input--radio__group">
+          <div class="input--radio__set" >
+            <span class="label--radio__text">Small</span>
+            <input class="input--radio" type="radio" id="radio1" name="radio">
+            <label class="label--radio" for="radio1"></label>
+          </div>
+          <div class="input--radio__set" for="radio">
+            <span class="label--radio__text">Medium</span>
+            <input class="input--radio" type="radio" id="radio2" name="radio">
+            <label class="label--radio" for="radio2"></label>
+          </div>
+          <div class="input--radio__set" for="radio">
+            <span class="label--radio__text">Large</span>
+            <input class="input--radio" type="radio" id="radio3" name="radio">
+            <label class="label--radio" for="radio3"></label>
+          </div>
+        </div>
+        
+
+      </fieldset>
+      <fieldset class="grid__column--12 bg-white form__field">
+        <label for=""></label>
+      </fieldset>
+    </form>
+    <aside class="grid__column--base--12 grid__column--mdm--4 bg-white">
+      <h1>Hello</h1>
+    </aside>
+  </main>
+</body>
+
+</html>
