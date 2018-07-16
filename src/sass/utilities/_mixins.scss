@@ -177,6 +177,7 @@
 @mixin panel($type) {
 	@if $type == "basic" {
 		display: flex;
+		flex-flow: column nowrap;
 		margin: 1em auto;
 		text-decoration: none;
 		color: #000;
