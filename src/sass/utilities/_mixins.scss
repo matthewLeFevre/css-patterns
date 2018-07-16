@@ -107,7 +107,12 @@
     } @else if $type == "grid--limited-padded" {
         grid-gap: $pad;
         max-width: $limit;
-    }
+    } @else if $type == "grid--nested" {
+		margin: 0;
+	} @else if $type == "grid--nested--padded" {
+		grid-gap: $pad;
+		margin: 0;
+	}
 }
 
 // Extend css-patterns grid 

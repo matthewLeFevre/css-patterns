@@ -7,24 +7,71 @@
 .form__pair { margin: 1em 0; }
 .form__label { 
     font-size: $main;
-
-    &.top {
-        display: block;
-    }
+    display: block;
 }
 .form__field {
     font-size: $main;
-    border: 1px $grey solid;
-    border-radius: 3px;
-    padding: .35em;
+    border: 0;
+    padding: 1em;
     &:focus {
-        outline-color: $blue;
+        outline-color: 0;
     }
     &.full {
         display: block;
         width: 100%;
     }
 }
+
+.input--text {
+    font-size: $initial;
+    border: 0;
+    padding: .35em;
+    background-color: $white;
+    &:focus {
+        outline-color: 0;
+    }
+    &.full {
+        display: block;
+        width: 100%;
+    }
+    &.breath {
+        margin: .25em 0;
+    }
+}
+
+.input--radio__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input--radio {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.input--radio:checked + .label--radio::after {
+    background-color: $green;
+}
+
+.label--radio {
+    font-size: $main;
+    cursor: pointer;
+    &:after {
+        content: '';
+        display: inline-block;
+        height: $sml;
+        width: $sml;
+        border: $blue 1px solid;
+        margin: 0 .75em;
+        vertical-align: middle;
+        border-radius: 50%;
+        transition: background-color 200ms ease;
+    }
+}
+
 .form__label--checkbox {
     font-size: $main;
     cursor: pointer;

@@ -34,6 +34,8 @@
     }
 }
 
+.grid--nested { @include grid("grid--nested");}
+
 .grid__column {
     
     // This is a responsive option for creating grid columns
