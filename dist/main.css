@@ -564,17 +564,23 @@ body {
   width: 100%; }
 
 .form {
-  display: block;
-  width: 100%;
   min-height: 50px;
-  padding: 25px; }
+  padding: 25px;
+  width: 100%; }
+
+.form--sml {
+  min-height: 50px;
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto; }
 
 .form__pair {
   margin: 1em 0; }
 
 .form__label {
-  font-size: 1.125em;
   display: block; }
+  .form__label.side {
+    display: inline-block; }
 
 .form__field {
   font-size: 1.125em;
@@ -587,10 +593,11 @@ body {
     width: 100%; }
 
 .input--text {
-  font-size: 1em;
   border: 0;
   padding: .35em;
-  background-color: #fff; }
+  background-color: #fff;
+  border: #084887 1px solid;
+  border-radius: 0.25em; }
   .input--text:focus {
     outline-color: 0; }
   .input--text.full {
@@ -617,7 +624,7 @@ body {
   bottom: 0; }
 
 .input--radio:checked + .label--radio::before {
-  background-color: #4A585E; }
+  background-color: #000; }
 
 .input--radio__set {
   padding: .5em; }
@@ -640,7 +647,7 @@ body {
     position: absolute;
     height: 0.9em;
     width: 0.9em;
-    border: #4A585E 1px solid;
+    border: #000 1px solid;
     vertical-align: middle;
     border-radius: 50%;
     -webkit-transition: background-color 200ms ease;
@@ -657,15 +664,15 @@ body {
   margin-bottom: .5em;
   display: block; }
 
-.form__label--checkbox {
+.label--checkbox {
   font-size: 1.125em;
   cursor: pointer; }
 
-.form__label--checkbox::after {
+.label--checkbox::before {
   content: '';
   display: inline-block;
-  height: 1.125em;
-  width: 1.125em;
+  height: 0.9em;
+  width: 0.9em;
   border: #4A585E 1px solid;
   margin: 0 .75em;
   vertical-align: middle;
@@ -673,11 +680,13 @@ body {
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease; }
 
-.form__field--checkbox {
+.input--checkbox {
   visibility: hidden;
-  position: absolute; }
+  position: absolute;
+  right: 0;
+  bottom: 0; }
 
-.form__field--checkbox:checked + .form__label--checkbox::after {
+.input--checkbox:checked + .label--checkbox::before {
   background-color: #56BF00; }
 
 .btn {
@@ -688,9 +697,9 @@ body {
   width: auto;
   background-color: #697479;
   border: 0.1em solid #697479;
+  border-radius: 0.25em;
   font-weight: 700;
   font-family: sans-serif;
-  font-size: 1em;
   color: #fff;
   display: inline-block;
   cursor: pointer;

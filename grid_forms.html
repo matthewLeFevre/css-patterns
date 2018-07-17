@@ -9,47 +9,93 @@
   <link rel="stylesheet" href="dist/main.css">
 </head>
 
-<body class="bg-blue grid">
+<body class="grid">
   <header class="grid__column--base--12 bg-grey"></header>
 
 
   <main class="grid--nested grid__column--base--12">
-    <form class="grid--nested grid__column--base--12 grid__column--mdm--8">
-      <h1 class="grid__column--base--12 txt-white">Test Form</h1>
-      <fieldset class="grid__column--6 bg-purple form__field">
-        <label class="form__label txt-white" for="">First Name</label>
-        <input class="input--text breath full" type="text">
-        <laebl class="form__label txt-white" for="">Last Name</label>
-        <input class="input--text breath full" type="text">
-      </fieldset>
-      <fieldset class="grid__column--6 bg-grey form__field">
-        <div class="input--radio__group">
-          <div class="input--radio__set" >
-            <span class="label--radio__text">Small</span>
-            <input class="input--radio" type="radio" id="radio1" name="radio">
-            <label class="label--radio" for="radio1"></label>
-          </div>
-          <div class="input--radio__set" for="radio">
-            <span class="label--radio__text">Medium</span>
-            <input class="input--radio" type="radio" id="radio2" name="radio">
-            <label class="label--radio" for="radio2"></label>
-          </div>
-          <div class="input--radio__set" for="radio">
-            <span class="label--radio__text">Large</span>
-            <input class="input--radio" type="radio" id="radio3" name="radio">
-            <label class="label--radio" for="radio3"></label>
-          </div>
-        </div>
-        
+    <section class="grid__column--base--12 grid__column--mdm--6">
+      <form class="grid--nested form--sml">
+        <h2 class="grid__column--base--12">Login Form</h2>
+        <fieldset class="grid__column--12 form__field">
+          <label class="form__label" for="">Email/Username</label>
+          <input class="input--text breath full" type="text">
+          <label class="form__label" for="">Password</label>
+          <input class="input--text breath full" type="text">
+          <label for="" class="form__label side">Stay LoggedIn</label>
+          <input class="input--checkbox" type="checkbox" id="stayLoggedIn" name="stayLoggedIn">
+          <label class="label--checkbox" for="stayLoggedIn"></label>
+        </fieldset>
+        <fieldset class="grid__column--12 form__field">
+          <button class="tiny btn primary">Login</button>
+          <button class="tiny btn alert">Close</button>
+        </fieldset>
+      </form>
+    </section>
+    
+    <section class="grid__column--base--12 grid__column--mdm--6">
+      <form class="grid--nested form--sml">
+          <h2 class="grid__column--base--12">Registration Form</h2>
+          <fieldset class="grid__column--6 form__field">
+            <h3>Information</h3>
+            <label for="" class="form__label">Username</label>
+            <input type="text" class="input--text breath full">
+            <label for="" class="form__label">Email</label>
+            <input type="text" class="input--text breath full">
+            <label for="" class="form__label">Password</label>
+            <input type="text" class="input--text breath full">
+            <label for="" class="form__label">Re enter Password</label>
+            <input type="text" class="input--text breath full">
+          </fieldset>
+          <fieldset class="grid__column--6 form__field">
+            <h3>Gender</h3>
+            <div class="input--radio__group">
+              <div class="input--radio__set" >
+                <span class="label--radio__text">Male</span>
+                <input class="input--radio" type="radio" id="radio1" name="radio">
+                <label class="label--radio" for="radio1"></label>
+              </div>
+              <div class="input--radio__set" for="radio">
+                <span class="label--radio__text">Female</span>
+                <input class="input--radio" type="radio" id="radio2" name="radio">
+                <label class="label--radio" for="radio2"></label>
+              </div>
+              <div class="input--radio__set" for="radio">
+                <span class="label--radio__text">Other</span>
+                <input class="input--radio" type="radio" id="radio3" name="radio">
+                <label class="label--radio" for="radio3"></label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="grid__column--12 form__field">
+              <h3>Account Purpose</h3>
+              <label for="" class="form__label side">Customer</label>
+              <input class="input--checkbox" type="checkbox" id="customer" name="customer">
+              <label class="label--checkbox" for="customer"></label>
+              <label for="" class="form__label side">Marketer</label>
+              <input class="input--checkbox" type="checkbox" id="marketer" name="marketer">
+              <label class="label--checkbox" for="marketer"></label>
+          </fieldset>
+          <fieldset class="grid__column--12 form__field">
+            <button class="tiny btn primary">Login</button>
+            <button class="tiny btn alert">Close</button>
+          </fieldset>
+      </form>
+    </section>
 
-      </fieldset>
-      <fieldset class="grid__column--12 bg-white form__field">
-        <label for=""></label>
-      </fieldset>
-    </form>
-    <aside class="grid__column--base--12 grid__column--mdm--4 bg-white">
-      <h1>Hello</h1>
-    </aside>
+    <section class="grid__column--base--12 grid__column--mdm--6">
+      <div class="grid--nested">
+        <h2 class="grid__column--12 txt-white bg-grey">Project Management</h2>
+
+        <ul class="grid__column--12 grid--nested">
+          <li class="grid__column--base--4 mdm bg-blue txt-white">Task</li>
+        </ul>
+
+      </div>
+      <form class="grid--nested form--sml">
+
+      </form>
+    </section>
   </main>
 </body>
 
