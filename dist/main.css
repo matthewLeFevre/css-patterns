@@ -568,10 +568,21 @@ body {
   padding: 25px;
   width: 100%; }
 
+.form--no-padding {
+  min-height: 50px;
+  padding: 0;
+  width: 100%; }
+
 .form--sml {
   min-height: 50px;
   padding: 25px;
   max-width: 500px;
+  margin: 0 auto; }
+
+.form--lrg {
+  min-height: 50px;
+  padding: 25px;
+  max-width: 1000px;
   margin: 0 auto; }
 
 .form__pair {
@@ -689,6 +700,33 @@ body {
 .input--checkbox:checked + .label--checkbox::before {
   background-color: #56BF00; }
 
+.alert {
+  padding: 1em; }
+  .alert .close {
+    display: none;
+    cursor: pointer; }
+    .alert .close:hover {
+      color: #000; }
+
+.alert--closeable {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .alert--closeable .close {
+    display: none;
+    cursor: pointer; }
+    .alert--closeable .close:hover {
+      color: #000; }
+  .alert--closeable .close {
+    display: block; }
+
 .btn {
   margin: .1em 0;
   text-decoration: none;
@@ -774,18 +812,18 @@ body {
         background-color: #56BF00;
         color: #fff;
         border-color: #56BF00; }
-  .btn.alert {
+  .btn.danger {
     background-color: #D33115;
     border-color: #D33115;
     color: #fff; }
-    .btn.alert.hoverable:hover {
+    .btn.danger.hoverable:hover {
       background-color: #fff;
       color: #D33115;
       border-color: #D33115; }
-    .btn.alert.outline {
+    .btn.danger.outline {
       background-color: #fff;
       color: #D33115; }
-      .btn.alert.outline.hoverable:hover {
+      .btn.danger.outline.hoverable:hover {
         background-color: #D33115;
         color: #fff;
         border-color: #D33115; }

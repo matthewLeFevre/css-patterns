@@ -13,11 +13,11 @@
 // css patterns basic colors
 // 
 // feel free to add or change the values here
-// if youw ant your own colors to effect css-patterns
+// if you want your own colors to effect css-patterns
 // classes it is recommended you add them to the 
 // '$colors' list 
 // *WARNING*: Other lists are dependent on this list
-// Button Colors are dependent
+// Button Colors are no longer dependent
 
 $white:    			#fff;
 $black:    			#000;
@@ -43,14 +43,14 @@ $colors: (
 
 // Button colors
 // The `$colors` map can be used to generate 
-// button variations or a this default button 
+// button variations or this default button 
 // map can be used to 
 
 $btn-colors: (
 	"primary": 	$blue,
 	"secondary":$green,
 	"success": 	$green,
-	"alert": 	$red,
+	"danger": 	$red,
 	"warning": 	$yellow
 	// "action": good name for a themed button
 );

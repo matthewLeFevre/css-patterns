@@ -13,8 +13,15 @@
     @include form('form');
 }
 
+.form--no-padding {
+    @include form('form', 10px, 0);
+}
+
 .form--sml {
     @include form('form--limited', 500px);
+}
+.form--lrg {
+    @include form('form--limited', 1000px);
 }
 .form__pair { margin: 1em 0; }
 .form__label { 

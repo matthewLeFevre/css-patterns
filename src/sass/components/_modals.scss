@@ -1,0 +1,11 @@
+$modal-types: 'basic', 'backdrop';
+$modal-sizes: (
+    'sml': 300px,
+    'mdm': 600px,
+    'lrg': 900px, 
+);
+
+@mixin modal( $type: 'basic', $size: 'sml') {
+    width: $size;
+    position: absolute;
+}
