@@ -97,7 +97,7 @@
 			$limit: $limited-grid-size, 
 			$pad: $padded-grid-padding) {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat($columns, 1fr);
 	grid-auto-rows: minmax(50px, auto);
     margin: 0 auto;
     @if $type == "grid--padded" {

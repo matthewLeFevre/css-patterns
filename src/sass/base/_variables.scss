@@ -132,31 +132,8 @@ $break-points: (
 
 
 
-// Grid Variables -- change at your own risk --
-
-$columns: (
-    "1": 1,
-    "2": 2,
-    "3": 3,
-    "4": 4,
-    "5": 5,
-    "6": 6,
-    "7": 7,
-    "8": 8,
-    "9": 9,
-    "10": 10,
-    "11": 11,
-    "12": 12,
-);
-
-$grid-sizes: (
-    "base": "no bp",
-    "tiny": $bp-tiny,
-    "sml":  $bp-sml,
-    "mdm":  $bp-mdm,
-    "lrg":  $bp-lrg,
-);
-
+// Grid Variables -- Use caution when changing --
+$columns: 12;
 $limited-grid-size: 75em;
 $padded-grid-padding: .75em;
 

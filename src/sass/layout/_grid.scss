@@ -36,46 +36,47 @@
 
 .grid--nested { @include grid("grid--nested");}
 
+// simply 'column' would be a much more concise class name prefix
 .grid__column {
     
-    // This is a responsive option for creating grid columns
     // Syntax: class="grid__column--3"
-    @each $column, $number in $columns {
+    // ** NOT used enough to be justified move to alter**
+    $column: 1;
+    @while $column <= $columns {
         &--#{$column} {
-            grid-column: span 12;
-            @include bp($bp-tiny) {
-                @if $number <= 6 {
-                    grid-column: span 6;
+            grid-column: span $column;
+            @each $size, $bp in $break-points {
+                &--#{$size} {
+                    @include bp($bp) {
+                        grid-column: span $column;
+                    }
                 }
             }
-            @include bp($bp-sml) {
-                
-            }
-            @include bp-mdm() {
-                grid-column: span $number;
-            }
         }
+        $column: $column + 1;
     }
 
     // This is a non-responsive option for creating grid columns
     // However by adding multiple classes the exact sizes can be applied at each
     // breakpoint making it responsive exactly to your needs
     // Syntax: class="grid__column--base--12 grid__column--tiny--6 grid__column--mdm--3"
-    @each $size, $bp in $grid-sizes {
-        &--#{$size} {
-            @each $column, $number in $columns {
-                &--#{$column} {
-                    @if $size != "base" {
-                        @include bp($bp) {
-                            grid-column: span $number;
-                        }
-                    } @else {
-                        grid-column: span $number;
-                    }
-                }
-            }
-        }
-    }
+    // @each $size, $bp in $grid-sizes {
+    //     &--#{$size} {
+    //         $column: 1;
+    //         @while $column <= $columns {
+    //             &--#{$column} {
+    //                 @if $size != "base" {
+    //                     @include bp($bp) {
+    //                         grid-column: span $column;
+    //                     }
+    //                 } @else {
+    //                     grid-column: span $column;
+    //                 }
+    //             }
+    //             $column: $column + 1;
+    //         }
+    //     }
+    // }
 }
 
 .grid__image {

@@ -242,322 +242,184 @@ body {
   margin: 0; }
 
 .grid__column--1 {
-  grid-column: span 12; }
+  grid-column: span 1; }
   @media only screen and (min-width: 40em) {
-    .grid__column--1 {
-      grid-column: span 6; } }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--1 {
+    .grid__column--1--tiny {
+      grid-column: span 1; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--1--sml {
+      grid-column: span 1; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--1--mdm {
+      grid-column: span 1; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--1--lrg {
       grid-column: span 1; } }
 
 .grid__column--2 {
-  grid-column: span 12; }
+  grid-column: span 2; }
   @media only screen and (min-width: 40em) {
-    .grid__column--2 {
-      grid-column: span 6; } }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--2 {
+    .grid__column--2--tiny {
+      grid-column: span 2; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--2--sml {
+      grid-column: span 2; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--2--mdm {
+      grid-column: span 2; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--2--lrg {
       grid-column: span 2; } }
 
 .grid__column--3 {
-  grid-column: span 12; }
+  grid-column: span 3; }
   @media only screen and (min-width: 40em) {
-    .grid__column--3 {
-      grid-column: span 6; } }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--3 {
+    .grid__column--3--tiny {
+      grid-column: span 3; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--3--sml {
+      grid-column: span 3; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--3--mdm {
+      grid-column: span 3; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--3--lrg {
       grid-column: span 3; } }
 
 .grid__column--4 {
-  grid-column: span 12; }
+  grid-column: span 4; }
   @media only screen and (min-width: 40em) {
-    .grid__column--4 {
-      grid-column: span 6; } }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--4 {
+    .grid__column--4--tiny {
+      grid-column: span 4; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--4--sml {
+      grid-column: span 4; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--4--mdm {
+      grid-column: span 4; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--4--lrg {
       grid-column: span 4; } }
 
 .grid__column--5 {
-  grid-column: span 12; }
+  grid-column: span 5; }
   @media only screen and (min-width: 40em) {
-    .grid__column--5 {
-      grid-column: span 6; } }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--5 {
+    .grid__column--5--tiny {
+      grid-column: span 5; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--5--sml {
+      grid-column: span 5; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--5--mdm {
+      grid-column: span 5; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--5--lrg {
       grid-column: span 5; } }
 
 .grid__column--6 {
-  grid-column: span 12; }
+  grid-column: span 6; }
   @media only screen and (min-width: 40em) {
-    .grid__column--6 {
+    .grid__column--6--tiny {
       grid-column: span 6; } }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--6 {
+  @media only screen and (min-width: 48em) {
+    .grid__column--6--sml {
+      grid-column: span 6; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--6--mdm {
+      grid-column: span 6; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--6--lrg {
       grid-column: span 6; } }
 
 .grid__column--7 {
-  grid-column: span 12; }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--7 {
+  grid-column: span 7; }
+  @media only screen and (min-width: 40em) {
+    .grid__column--7--tiny {
+      grid-column: span 7; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--7--sml {
+      grid-column: span 7; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--7--mdm {
+      grid-column: span 7; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--7--lrg {
       grid-column: span 7; } }
 
 .grid__column--8 {
-  grid-column: span 12; }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--8 {
+  grid-column: span 8; }
+  @media only screen and (min-width: 40em) {
+    .grid__column--8--tiny {
+      grid-column: span 8; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--8--sml {
+      grid-column: span 8; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--8--mdm {
+      grid-column: span 8; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--8--lrg {
       grid-column: span 8; } }
 
 .grid__column--9 {
-  grid-column: span 12; }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--9 {
+  grid-column: span 9; }
+  @media only screen and (min-width: 40em) {
+    .grid__column--9--tiny {
+      grid-column: span 9; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--9--sml {
+      grid-column: span 9; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--9--mdm {
+      grid-column: span 9; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--9--lrg {
       grid-column: span 9; } }
 
 .grid__column--10 {
-  grid-column: span 12; }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--10 {
+  grid-column: span 10; }
+  @media only screen and (min-width: 40em) {
+    .grid__column--10--tiny {
+      grid-column: span 10; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--10--sml {
+      grid-column: span 10; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--10--mdm {
+      grid-column: span 10; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--10--lrg {
       grid-column: span 10; } }
 
 .grid__column--11 {
-  grid-column: span 12; }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--11 {
+  grid-column: span 11; }
+  @media only screen and (min-width: 40em) {
+    .grid__column--11--tiny {
+      grid-column: span 11; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--11--sml {
+      grid-column: span 11; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--11--mdm {
+      grid-column: span 11; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--11--lrg {
       grid-column: span 11; } }
 
 .grid__column--12 {
   grid-column: span 12; }
-  @media screen and (min-width: 62.5em) {
-    .grid__column--12 {
+  @media only screen and (min-width: 40em) {
+    .grid__column--12--tiny {
       grid-column: span 12; } }
-
-.grid__column--base--1 {
-  grid-column: span 1; }
-
-.grid__column--base--2 {
-  grid-column: span 2; }
-
-.grid__column--base--3 {
-  grid-column: span 3; }
-
-.grid__column--base--4 {
-  grid-column: span 4; }
-
-.grid__column--base--5 {
-  grid-column: span 5; }
-
-.grid__column--base--6 {
-  grid-column: span 6; }
-
-.grid__column--base--7 {
-  grid-column: span 7; }
-
-.grid__column--base--8 {
-  grid-column: span 8; }
-
-.grid__column--base--9 {
-  grid-column: span 9; }
-
-.grid__column--base--10 {
-  grid-column: span 10; }
-
-.grid__column--base--11 {
-  grid-column: span 11; }
-
-.grid__column--base--12 {
-  grid-column: span 12; }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--1 {
-    grid-column: span 1; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--2 {
-    grid-column: span 2; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--3 {
-    grid-column: span 3; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--4 {
-    grid-column: span 4; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--5 {
-    grid-column: span 5; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--6 {
-    grid-column: span 6; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--7 {
-    grid-column: span 7; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--8 {
-    grid-column: span 8; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--9 {
-    grid-column: span 9; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--10 {
-    grid-column: span 10; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--11 {
-    grid-column: span 11; } }
-
-@media only screen and (min-width: 40em) {
-  .grid__column--tiny--12 {
-    grid-column: span 12; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--1 {
-    grid-column: span 1; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--2 {
-    grid-column: span 2; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--3 {
-    grid-column: span 3; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--4 {
-    grid-column: span 4; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--5 {
-    grid-column: span 5; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--6 {
-    grid-column: span 6; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--7 {
-    grid-column: span 7; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--8 {
-    grid-column: span 8; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--9 {
-    grid-column: span 9; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--10 {
-    grid-column: span 10; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--11 {
-    grid-column: span 11; } }
-
-@media only screen and (min-width: 48em) {
-  .grid__column--sml--12 {
-    grid-column: span 12; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--1 {
-    grid-column: span 1; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--2 {
-    grid-column: span 2; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--3 {
-    grid-column: span 3; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--4 {
-    grid-column: span 4; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--5 {
-    grid-column: span 5; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--6 {
-    grid-column: span 6; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--7 {
-    grid-column: span 7; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--8 {
-    grid-column: span 8; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--9 {
-    grid-column: span 9; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--10 {
-    grid-column: span 10; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--11 {
-    grid-column: span 11; } }
-
-@media only screen and (min-width: 62.5em) {
-  .grid__column--mdm--12 {
-    grid-column: span 12; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--1 {
-    grid-column: span 1; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--2 {
-    grid-column: span 2; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--3 {
-    grid-column: span 3; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--4 {
-    grid-column: span 4; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--5 {
-    grid-column: span 5; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--6 {
-    grid-column: span 6; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--7 {
-    grid-column: span 7; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--8 {
-    grid-column: span 8; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--9 {
-    grid-column: span 9; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--10 {
-    grid-column: span 10; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--11 {
-    grid-column: span 11; } }
-
-@media only screen and (min-width: 75em) {
-  .grid__column--lrg--12 {
-    grid-column: span 12; } }
+  @media only screen and (min-width: 48em) {
+    .grid__column--12--sml {
+      grid-column: span 12; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid__column--12--mdm {
+      grid-column: span 12; } }
+  @media only screen and (min-width: 75em) {
+    .grid__column--12--lrg {
+      grid-column: span 12; } }
 
 .grid__image {
   display: block;
