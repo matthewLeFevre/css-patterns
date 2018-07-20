@@ -37,7 +37,7 @@
 .grid--nested { @include grid("grid--nested");}
 
 // simply 'column' would be a much more concise class name prefix
-.grid__column {
+.column {
     
     // Syntax: class="grid__column--3"
     // ** NOT used enough to be justified move to alter**
@@ -55,28 +55,6 @@
         }
         $column: $column + 1;
     }
-
-    // This is a non-responsive option for creating grid columns
-    // However by adding multiple classes the exact sizes can be applied at each
-    // breakpoint making it responsive exactly to your needs
-    // Syntax: class="grid__column--base--12 grid__column--tiny--6 grid__column--mdm--3"
-    // @each $size, $bp in $grid-sizes {
-    //     &--#{$size} {
-    //         $column: 1;
-    //         @while $column <= $columns {
-    //             &--#{$column} {
-    //                 @if $size != "base" {
-    //                     @include bp($bp) {
-    //                         grid-column: span $column;
-    //                     }
-    //                 } @else {
-    //                     grid-column: span $column;
-    //                 }
-    //             }
-    //             $column: $column + 1;
-    //         }
-    //     }
-    // }
 }
 
 .grid__image {

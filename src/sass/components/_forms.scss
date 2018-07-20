@@ -1,5 +1,6 @@
 @mixin form ($type, $limit: 300px, $padding: 25px) {
     min-height: 50px;
+    min-width: 300px;
     padding: $padding;
     @if $type == "form" {
         width: 100%;
@@ -31,7 +32,6 @@
     }
 }
 .form__field {
-    font-size: $main;
     border: 0;
     padding: 1em;
     &:focus {
