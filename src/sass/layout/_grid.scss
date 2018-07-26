@@ -36,24 +36,30 @@
 
 .grid--nested { @include grid("grid--nested");}
 
-// simply 'column' would be a much more concise class name prefix
 .column {
-    
-    // Syntax: class="grid__column--3"
-    // ** NOT used enough to be justified move to alter**
+
+    // columns set without media queries
     $column: 1;
     @while $column <= $columns {
         &--#{$column} {
             grid-column: span $column;
-            @each $size, $bp in $break-points {
-                &--#{$size} {
+        }
+        $column: $column + 1;
+    }
+
+    // media query set columns
+    @each $size, $bp in $break-points {
+        &--#{$size} {
+            $column: 1;
+            @while $column <= $columns {
+                &--#{$column} {
                     @include bp($bp) {
                         grid-column: span $column;
                     }
                 }
+                $column: $column + 1;
             }
         }
-        $column: $column + 1;
     }
 }
 
