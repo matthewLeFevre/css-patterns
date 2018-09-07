@@ -16,9 +16,9 @@
 	cursor: pointer;
 	@include transition(all, 200ms);
 	
-	&:hover {
-		opacity: .7;
-	}
+	&:hover {opacity: .7;}
+
+	&.breath {margin: .25em}
 
 	// More contrast on hover with default button colors
 	&.hoverable {

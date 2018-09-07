@@ -1,26 +1,8 @@
-// Variables
-//
-// Feel free to add your own variables to this 
-// file to accomodate the styling needs of 
-// your project
-// 
-// It is recommended that you stay clear of some
-// variables and lists so that css-patterns basic
-// functional needs can be met
 
-// Colors
+// Color
 
-// css patterns basic colors
-// 
-// feel free to add or change the values here
-// if you want your own colors to effect css-patterns
-// classes it is recommended you add them to the 
-// '$colors' list 
-// *WARNING*: Other lists are dependent on this list
-// Button Colors are no longer dependent
-
-$white:    			#fff;
-$black:    			#000;
+$white:    		#fff;
+$black:    		#000;
 $grey: 				#697479;
 $blue: 				#084887;
 $green: 			#56BF00;
@@ -28,8 +10,12 @@ $yellow: 			#FFCC42;
 $red: 				#D33115;
 $purple:			#5F0F40;
 
-// Add your colors so you can use the
-// '.bg' and '.txt' classes
+$grey-100: 		#C3C7C9;
+$grey-150:		#CCC;
+$grey-200: 		#91999D;
+$grey-300: 		#697479;
+$grey-400: 		#5A676C;
+$grey-500: 		#4A585E;
 
 $colors: (
 	"grey": 	$grey,
@@ -37,57 +23,34 @@ $colors: (
 	"green": 	$green,
 	"yellow":	$yellow,
 	"red":		$red,
-	"purple":   $purple,
-	"white":    $white,
+	"purple": $purple,
+	"white":  $white,
+	"black":  $black
 );
 
+// Semi Transparent Colors
+
+$semiTrans: rgba(0,0,0,.65);
+
 // Button colors
-// The `$colors` map can be used to generate 
-// button variations or this default button 
-// map can be used to 
 
 $btn-colors: (
 	"primary": 	$blue,
 	"secondary":$green,
 	"success": 	$green,
 	"danger": 	$red,
-	"warning": 	$yellow
-	// "action": good name for a themed button
+	"warning": 	$yellow,
+	"action": 	$blue,
 );
-
-// Not a requirement to have these
-// greys but they are here if you need them
-
-$grey-100: 		#C3C7C9;
-$grey-200: 		#91999D;
-$grey-300: 		#697479;
-$grey-400: 		#5A676C;
-$grey-500: 		#4A585E;
-
-// This list can be deleted it is not used
-// in any other area of the library
-
-$grey-scale: (
-	"100": 			$grey-100,
-	"200": 			$grey-200,
-	"300": 			$grey-300,
-	"400": 			$grey-400,
-	"500": 			$grey-500
-);
-
-
 
 // Typography
-//
-// Add your own fonts or alter
-// these pre-assigned ones to fit 
-// your application needs
 
-$main-font:   		sans-serif;
+$main-font:   sans-serif;
 $accent: 			serif;
-$document:			serif;
+$document:		serif;
 
 // Recommended sizes
+
 $tiny: 				.75em;
 $sml:  				.90em;
 $initial: 			1em;
@@ -100,7 +63,7 @@ $lrg:  				2.5em;
 $sizes: (
 	"tiny": 	$tiny,
 	"sml": 		$sml,
-	"initial": 	$initial,
+	"initial":$initial,
 	"main": 	$main,
 	"mid": 		$mid,
 	"mdm": 		$mdm,
@@ -108,13 +71,17 @@ $sizes: (
 	"lrg": 		$lrg,
 );
 
-
-
 // Border Radius
 
 $br: 	 .25em;
 
+// Box Shadow
 
+$box-shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$box-shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$box-shadow3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$box-shadow4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$box-shadow5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
 // Breakpoints
 
@@ -130,9 +97,17 @@ $break-points: (
 	"lrg":  $bp-lrg
 );
 
+// z-index
+$z-0: 0;
+$z-05: 5;
+$z-1: 10;
+$z-2: 20;
+$z-3: 30;
+$z-4: 40;
+$z-5: 50;
 
+// Grid 
 
-// Grid Variables -- Use caution when changing --
 $columns: 12;
 $limited-grid-size: 75em;
 $padded-grid-padding: .75em;

@@ -36,9 +36,7 @@
 
 .grid--nested { @include grid("grid--nested");}
 
-.column {
-
-    // columns set without media queries
+.col {
     $column: 1;
     @while $column <= $columns {
         &--#{$column} {
@@ -46,18 +44,19 @@
         }
         $column: $column + 1;
     }
+}
 
-    // media query set columns
+.col {
     @each $size, $bp in $break-points {
         &--#{$size} {
-            $column: 1;
-            @while $column <= $columns {
-                &--#{$column} {
-                    @include bp($bp) {
+            @include bp($bp) {
+                $column: 1;
+                @while $column <= $columns {
+                    &--#{$column} {
                         grid-column: span $column;
                     }
+                    $column: $column + 1;
                 }
-                $column: $column + 1;
             }
         }
     }

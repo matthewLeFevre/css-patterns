@@ -1,10 +1,19 @@
 @mixin alert($type: "") {
-    // position: absolute;
+    position: fixed;
+    width: 80vw;
+    min-width: 300px;
     padding: 1em;
+    top: 2em;
+    left: 10vw;
+    right: 10vw;
+    z-index: $z-5;
+    border-radius: $br;
 
     .close {
         display: none;
         cursor:pointer;
+        color: $grey;
+        @include transition;
         &:hover {
             color: $black;
         }
@@ -16,6 +25,10 @@
         .close {
             display: block;
         }
+    }
+
+    &.hide {
+        display: none;
     }
 }
 
