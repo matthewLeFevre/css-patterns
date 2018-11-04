@@ -24,6 +24,7 @@
 .form--lrg {
     @include form('form--limited', 1000px);
 }
+
 .form__pair { margin: 1em 0; }
 .form__label { 
     display: block;

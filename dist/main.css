@@ -1,3 +1,4 @@
+/* Color */
 *,
 *::before,
 *::after {
@@ -789,91 +790,6 @@ body {
 .tab__footer {
   padding: .5em;
   border-top: 1px solid #ddd; }
-
-.modal__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 50;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.65); }
-
-.modal {
-  min-width: 300px;
-  width: 70vw;
-  max-width: 1000px;
-  background-color: white;
-  border-radius: 4px; }
-
-.modal__body {
-  padding: 1em; }
-
-.modal__header {
-  padding: 1em;
-  border-bottom: 0.5px solid #CCC;
-  font-size: 20px; }
-
-.modal__footer {
-  padding: 1em;
-  border-top: 0.5px solid #CCC; }
-
-.modal__img {
-  display: block;
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
-  vertical-align: middle; }
-
-.modal__text {
-  margin-top: 1.8em; }
-
-.modal__text__heading {
-  font-size: 20px;
-  margin-bottom: 0.8em; }
-
-.modal__text__body p {
-  margin-bottom: 1em; }
-
-.modal__img__preview {
-  width: 100%;
-  display: block; }
-
-@media screen and (min-width: 40em) {
-  .modal__body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-  .modal__img {
-    max-width: 45%;
-    margin: 0; }
-  .modal__text {
-    margin-top: 0;
-    margin-left: 2em; } }
 
 pre {
   height: auto;
