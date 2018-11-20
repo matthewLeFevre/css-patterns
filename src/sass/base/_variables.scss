@@ -6,6 +6,8 @@
 $white:    		#fff;
 $black:    		#000;
 $grey: 				#697479;
+$light: 			#eee;
+$dark:        #1F2D3D;
 
 // css-patterns theme
 
@@ -34,7 +36,9 @@ $colors: (
 	"red":		$red,
 	"purple": $purple,
 	"white":  $white,
-	"black":  $black
+	"black":  $black,
+	"light":  $light,
+	"dark":   $dark
 );
 
 // Button colors
@@ -60,6 +64,7 @@ $document:		serif;
 
 // Recommended sizes
 
+$mini:        .65em;
 $tiny: 				.75em;
 $sml:  				.90em;
 $initial: 			1em;
@@ -70,6 +75,7 @@ $mod:  				1.9em;
 $lrg:  				2.5em;
 
 $sizes: (
+	"mini":   $mini,
 	"tiny": 	$tiny,
 	"sml": 		$sml,
 	"initial":$initial,
@@ -80,9 +86,17 @@ $sizes: (
 	"lrg": 		$lrg,
 );
 
+// font weight
+
+$thin: 400;
+$regular: 500;
+$bold: 700;
+$extra-bold: 900;
+
 // Border Radius
 
-$br: 	 .25em;
+$br-01: .25em;
+$br-02: .5em; 
 
 // Box Shadow
 

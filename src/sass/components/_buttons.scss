@@ -8,7 +8,7 @@
 	width: auto;
 	background-color: $grey;
 	border: .1em solid $grey;
-	border-radius: $br;
+	border-radius: $br-01;
 	font-weight: 700;
 	font-family: $main-font;
 	color: $white;
@@ -18,7 +18,7 @@
 	
 	&:hover {opacity: .7;}
 
-	&.breath {margin: .25em}
+	&.breath {margin: .25em;}
 
 	// More contrast on hover with default button colors
 	&.hoverable {
@@ -96,6 +96,4 @@
 	}	
 };
 
-.btn {
-	@include btn;
-}
+.btn { @include btn;}

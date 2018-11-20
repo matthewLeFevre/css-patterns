@@ -29,6 +29,7 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "dependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.10.0",
+    "rebuild": "^0.1.2"
   }
 }

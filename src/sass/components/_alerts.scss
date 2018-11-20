@@ -4,32 +4,26 @@
     min-width: 300px;
     padding: 1em;
     top: 2em;
-    left: 10vw;
-    right: 10vw;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: $z-5;
-    border-radius: $br;
+    border-radius: $br-01;
 
     .close {
         display: none;
         cursor:pointer;
         color: $grey;
         @include transition;
-        &:hover {
-            color: $black;
-        }
+        &:hover { color: $black;}
     }
     @if $type == 'closeable' {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .close {
-            display: block;
-        }
+        .close { display: block;}
     }
 
-    &.hide {
-        display: none;
-    }
+    &.hide { display: none;}
 }
 
 .alert {
