@@ -825,6 +825,8 @@ body {
     background-color: #ccc; }
   .input--textarea.full {
     width: 100%; }
+  .input--textarea.breath {
+    margin: 0.25em 0; }
 
 .alert {
   position: fixed;
@@ -1095,7 +1097,7 @@ code {
   padding: 2em;
   display: block;
   color: #fff;
-  overflow-x: scroll;
+  overflow-x: auto;
   font-family: monospace; }
 
 .t {
