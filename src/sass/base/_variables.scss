@@ -26,6 +26,23 @@ $grey-300: 		#697479;
 $grey-400: 		#5A676C;
 $grey-500: 		#4A585E;
 
+//semi-transparent background
+
+$semi-trans: rgba(0,0,0,.6);
+
+//css variables colors
+
+:root {
+	--grey: $grey;
+	--light: $light;
+	--dark: $dark;
+	--blue: $blue;
+	--green: $green;
+	--yellow: $yellow;
+	--red: $red;
+	--purple: $purple;
+}
+
 // color map
 
 $colors: (
@@ -138,3 +155,13 @@ $padded-grid-padding: .75em;
 // button types
 
 $btn-types: "full" "icon" "round" "long";
+
+// card sizes
+
+$card-sizes: (
+	"tiny": 200px,
+	"sml": 300px,
+	"main": 500px,
+	"mdm": 700px,
+	"lrg": 900px
+);

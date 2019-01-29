@@ -20,6 +20,10 @@
   box-shadow: $box-shadow1;
 }
 
+.center__xy {
+  @include flex(row, nowrap, center, center);
+}
+
 $directions: "left" "right" "top" "bottom" "all";
 
 .spacing {

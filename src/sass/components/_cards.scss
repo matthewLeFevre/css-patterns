@@ -1,0 +1,54 @@
+
+
+@each $size, $value in $card-sizes {
+	.card--#{$size} {
+		min-width: 200px;
+		max-width: $value;
+		margin: 1em;
+		border-radius: $br-01;
+		overflow: hidden;
+		background-color: $light;
+	}
+}
+
+.modal {
+	@include flex(row, nowrap, center, center);
+	position: fixed;
+	top:  0;
+	bottom: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: $z-2;
+	background-color: $semi-trans;
+}
+
+.card-body {
+	p, form {
+		margin: 1em;
+	}
+	img {
+		width: 100%;
+		display: block;
+	}
+	h1,h2,h3,h4,h5 {
+		padding: .5em;
+	}
+	.card-video {
+		width: 100%;
+		padding-top: 56.25%;
+		position: relative;
+		// overflow: hidden;
+		iframe, video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.card-header, .card-footer {
+	padding: 1em;
+	background-color: $grey-200;
+}

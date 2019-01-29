@@ -22,7 +22,6 @@
 
 .footer-group__item {
   margin-bottom: .5em;
-  color: $light;
   font-size: $sml;
   @include bp-sml {
     font-size: $initial;
